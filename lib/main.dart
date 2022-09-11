@@ -20,16 +20,23 @@ class Page1 extends StatelessWidget {
           ),
           backgroundColor: Colors.greenAccent,
         ),
-        body: ListView.builder(scrollDirection: Axis.horizontal,
+        body: ListView.builder(
+            scrollDirection: Axis.horizontal,
             itemBuilder: (itemBuilder, index) {
-          return Container(
-            color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
-                .withOpacity(1.0),
-            width: 500,
-            height: 500,
-            child: Text("Color $index and For Free"),
-          );
-        })
-    );
+              return Container(
+                color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
+                    .withOpacity(1.0),
+                width: 500,
+                height: 500,
+                child: Center(
+                    child: Text(
+                  "Color number $index",
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 24.0,
+                  ),
+                )),
+              );
+            }));
   }
 }
