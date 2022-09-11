@@ -1,6 +1,6 @@
 # flutter_first_app
 
-A new Flutter project.
+My First Flutter Applciation, simple listview builder.
 
 ## Getting Started
 
